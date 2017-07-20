@@ -1,0 +1,59 @@
+$color1: #ffd65c;
+$color2: #5b618a;
+$color3: #272838;
+$color4: #1b998b;
+$color5: #ef946c;
+
+$header-height: 120px;
+$footer-height: 80px;
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+body{
+  background-color: $color2;
+  color: $color1;
+}
+
+.header{
+  min-height: $header-height;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: $color3;
+}
+
+.title{
+  text-align: center;
+
+}
+
+.email{
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $color3;
+  border-top: solid;
+  min-height: $footer-height;
+  border-color: $color4;
+  display: flex;
+}
+
+.github-logo{
+
+  margin-right: 10px;
+  margin-left: auto;
+  display:flex;
+  align-self: center;
+}
+
+.github-logo img{
+  height: 30px;
+  width: 30px;
+}

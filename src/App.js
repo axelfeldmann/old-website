@@ -1,12 +1,17 @@
 import React from 'react';
 import './App.css';
+import Header from './components/header';
+import Footer from './components/footer';
+import store from './stores/store';
+import { Provider } from 'react-redux';
 
 const App = () => (
-  <div>
-    <h4> axel feldmann </h4>
-    <h4> feldmann.nyc </h4>
-    a nice place to stay on the internet
-  </div>
+  <Provider store={store}>
+    <div>
+      <Header/>
+      <Footer/>
+    </div>
+  </Provider>
 );
 
 export default App;

@@ -1,24 +1,40 @@
-.App {
-  text-align: center;
-}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+body {
+  background-color: #5b618a;
+  color: #ffd65c; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+.header {
+  min-height: 120px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #272838; }
 
-.App-intro {
-  font-size: large;
-}
+.title {
+  text-align: center; }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+.email {
+  text-align: center; }
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #272838;
+  border-top: solid;
+  min-height: 80px;
+  border-color: #1b998b;
+  display: flex; }
+
+.github-logo {
+  margin-right: 10px;
+  margin-left: auto;
+  display: flex;
+  align-self: center; }
+
+.github-logo img {
+  height: 30px;
+  width: 30px; }
