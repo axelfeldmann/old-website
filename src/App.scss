@@ -4,12 +4,14 @@ $color3: #272838;
 $color4: #1b998b;
 $color5: #ef946c;
 
-$header-height: 120px;
+$header-height: 100px;
 $footer-height: 80px;
 
 // overall stuff
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
   font-weight: normal;
 }
 
@@ -33,27 +35,40 @@ html, body {
 // header stuff
 
 .header{
+  display: flex;
   background: blue;
   min-height: $header-height;
 }
 .header-center{
+  display: flex;
+  flex-flow: column;
+  margin-left: auto;
+  margin-right: auto;
 }
-.title{
-}
-.email{
+.title, .email{
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
 }
 
 // footer stuff
 
 .footer{
+  display: flex;
   background: green;
   min-height: $footer-height;
 }
 
 .github-logo{
+  margin-right: 10px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .github-logo img{
+  height: 40px;
+  width: 40px;
 }
 
 // tab stuff
@@ -80,10 +95,18 @@ html, body {
 }
 
 .label{
+  cursor: pointer;
   flex: 1;
-  height: 40px;
+  min-height: 40px;
   background: pink;
   margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label.selected{
+  color: lime;
 }
 
 .tab-pane{

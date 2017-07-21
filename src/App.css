@@ -1,4 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
   font-weight: normal; }
 
 html, body {
@@ -17,12 +19,35 @@ html, body {
   display: flex; }
 
 .header {
+  display: flex;
   background: blue;
-  min-height: 120px; }
+  min-height: 100px; }
+
+.header-center {
+  display: flex;
+  flex-flow: column;
+  margin-left: auto;
+  margin-right: auto; }
+
+.title, .email {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0; }
 
 .footer {
+  display: flex;
   background: green;
   min-height: 80px; }
+
+.github-logo {
+  margin-right: 10px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.github-logo img {
+  height: 40px;
+  width: 40px; }
 
 .content {
   flex: 1;
@@ -43,10 +68,17 @@ html, body {
   flex-flow: row; }
 
 .label {
+  cursor: pointer;
   flex: 1;
-  height: 40px;
+  min-height: 40px;
   background: pink;
-  margin: 10px; }
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.label.selected {
+  color: lime; }
 
 .tab-pane {
   flex: 1;
