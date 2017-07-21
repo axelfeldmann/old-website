@@ -11,14 +11,14 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 const makeTabLabels = (children, setTab) => children.map((tp, idx) => (
-  <div className='tabLabel' onClick={ setTab(idx) } key={ idx }>
+  <div className='label' onClick={ setTab(idx) } key={ idx }>
     { tp.props.label }
   </div>
 ))
 
 const Tabs = ({ curTab, setTab, children }) => (
   <div className='tabs'>
-    <div className='tabLabels'> { makeTabLabels(children, setTab) } </div>
+    <div className='tab-labels'> { makeTabLabels(children, setTab) } </div>
     { children[curTab] }
   </div>
 );

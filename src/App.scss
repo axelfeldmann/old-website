@@ -7,26 +7,47 @@ $color5: #ef946c;
 $header-height: 120px;
 $footer-height: 80px;
 
+// overall stuff
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-body{
+html, body {
+  height: 100%;
+  background: pink;
 }
+
+.container{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: yellow;
+  height: 100%;
+  flex-flow: column;
+  display: flex;
+}
+
+// header stuff
 
 .header{
+  background: blue;
+  min-height: $header-height;
 }
-
 .header-center{
 }
-
 .title{
 }
-
 .email{
 }
 
-.footer {
+// footer stuff
+
+.footer{
+  background: green;
+  min-height: $footer-height;
 }
 
 .github-logo{
@@ -35,5 +56,39 @@ body{
 .github-logo img{
 }
 
+// tab stuff
+
+.content{
+  flex: 1;
+  background: red;
+  display: flex;
+  flex-flow: column;
+}
+
 .tabs{
+  background: orange;
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  margin: 10px;
+}
+
+.tab-labels{
+  background: white;
+  display: flex;
+  flex-flow: row;
+}
+
+.label{
+  flex: 1;
+  height: 40px;
+  background: pink;
+  margin: 10px;
+}
+
+.tab-pane{
+  flex: 1;
+  background: black;
+  margin: 10px;
+  color: white;
 }

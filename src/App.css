@@ -1,2 +1,55 @@
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
+
+html, body {
+  height: 100%;
+  background: pink; }
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: yellow;
+  height: 100%;
+  flex-flow: column;
+  display: flex; }
+
+.header {
+  background: blue;
+  min-height: 120px; }
+
+.footer {
+  background: green;
+  min-height: 80px; }
+
+.content {
+  flex: 1;
+  background: red;
+  display: flex;
+  flex-flow: column; }
+
+.tabs {
+  background: orange;
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  margin: 10px; }
+
+.tab-labels {
+  background: white;
+  display: flex;
+  flex-flow: row; }
+
+.label {
+  flex: 1;
+  height: 40px;
+  background: pink;
+  margin: 10px; }
+
+.tab-pane {
+  flex: 1;
+  background: black;
+  margin: 10px;
+  color: white; }

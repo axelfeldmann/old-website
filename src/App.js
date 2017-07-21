@@ -14,13 +14,15 @@ import Thoughts from './components/tab-contents/thoughts';
 
 const App = () => (
   <Provider store={store}>
-    <div>
+    <div className='container'>
       <Header/>
-      <Tabs>
-        <TabPane label='About Me'><About/></TabPane>
-        <TabPane label='Projects'><Projects/></TabPane>
-        <TabPane label='Thoughts'><Thoughts/></TabPane>
-      </Tabs>
+      <div className='content'>
+        <Tabs>
+          <TabPane label='About Me'><About/></TabPane>
+          <TabPane label='Projects'><Projects/></TabPane>
+          <TabPane label='Thoughts'><Thoughts/></TabPane>
+        </Tabs>
+      </div>
       <Footer/>
     </div>
   </Provider>
