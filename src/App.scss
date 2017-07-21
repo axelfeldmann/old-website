@@ -4,6 +4,8 @@ $color3: #272838;
 $color4: #1b998b;
 $color5: #ef946c;
 
+$background-color: $color2;
+
 $header-height: 100px;
 $footer-height: 80px;
 
@@ -17,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 
 html, body {
   height: 100%;
-  background: pink;
+  background: $background-color;
 }
 
 .container{
@@ -35,8 +37,9 @@ html, body {
 // header stuff
 
 .header{
+  color: $color1;
   display: flex;
-  background: blue;
+  background: $color3;
   min-height: $header-height;
 }
 .header-center{
@@ -55,7 +58,7 @@ html, body {
 
 .footer{
   display: flex;
-  background: green;
+  background: $color3;
   min-height: $footer-height;
 }
 
@@ -75,13 +78,12 @@ html, body {
 
 .content{
   flex: 1;
-  background: red;
+  background: $background-color;
   display: flex;
   flex-flow: column;
 }
 
 .tabs{
-  background: orange;
   display: flex;
   flex-flow: column;
   flex: 1;
@@ -89,7 +91,6 @@ html, body {
 }
 
 .tab-labels{
-  background: white;
   display: flex;
   flex-flow: row;
 }
@@ -98,20 +99,28 @@ html, body {
   cursor: pointer;
   flex: 1;
   min-height: 40px;
-  background: pink;
-  margin: 10px;
+  background: $color4;
+  margin: 10px 10px 0 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.label:hover{
+  color: $color1;
 }
 
 .label.selected{
-  color: lime;
+  color: $color1;
+  background: $color3;
 }
 
 .tab-pane{
+  padding: 10px;
   flex: 1;
-  background: black;
-  margin: 10px;
+  background: $color3;
+  margin: 0 10px 10px 10px;
   color: white;
+  border-radius: 0 0 10px 10px;
 }
